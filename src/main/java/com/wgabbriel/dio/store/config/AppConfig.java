@@ -1,8 +1,12 @@
 package com.wgabbriel.dio.store.config;
 
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+
+@Configuration
+@OpenAPIDefinition(info = @Info(title = "Store API", version = "1.0", description = "API de loja demonstrando padrões de design"))
 public class AppConfig {
 
   private final String storeName = "Store Spring";
